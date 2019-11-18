@@ -1,0 +1,122 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(43, 1fr);
+  }
+  
+  header {
+    grid-area: 1 / 1 / span 3 / span 2;
+    background: rgb(247, 252, 210);
+  }
+  nav {
+    grid-area: 4 / 1 / span 6 / span 2;
+    background: rgb(243, 250, 193);
+  }
+  
+  .c {
+    grid-area: 10 / 1 / span 5 / span 2;
+    background: rgb(241, 250, 176);
+  }
+  .d {
+    grid-area: 15 / 1 / span 5 / span 2;
+    background: rgb(239, 250, 159);
+  }
+  .e {
+    grid-area: 20 / 1 / span 10 / span 1;
+    background: rgb(241, 255, 139);
+  }
+  .f {
+    grid-area: 20 / 2 / span 10 / span 1;
+    background: rgb(236, 252, 119);
+  }
+  .g {
+    grid-area: 30 / 1 / span 10 / span 1;
+    background: rgb(237, 255, 105);
+  }
+  .h {
+    grid-area: 30 / 2 / span 10 / span 1;
+    background: rgb(235, 255, 84);
+  }
+  
+  footer {
+    grid-area: 40 / 1 / span 3 / span 2;
+    background: rgb(229, 253, 50);
+  }
+  
+  @media screen and (min-width: 767px) {
+    body {
+      grid-template-columns: repeat(96, 1fr);
+      grid-template-rows: repeat(15, 1fr);
+    }
+  
+    header {
+      grid-area: 1 / 1 / span 2 / span 96;
+      background: rgb(252, 237, 210);
+    }
+    nav {
+      grid-area: 3 / 1 / span 12 / span 20;
+      background:  rgb(252, 233, 198);
+    }
+    
+    .c {
+      grid-area: 3 / 21 / span 4 / span 38;
+      background: rgb(253, 229, 184);
+    }
+    .d {
+      grid-area: 3 / 59 / span 4 / span 38;
+      background: rgb(252, 222, 167);
+    }
+    .e {
+      grid-area: 7 / 21 / span 5 / span 19;
+      background: rgb(255, 219, 153);
+    }
+    .f {
+      grid-area: 7 / 40 / span 5 / span 19;
+      background: rgb(255, 214, 139);
+    }
+    .g {
+      grid-area: 7 / 59 / span 5 / span 19;
+      background: rgb(255, 208, 120);
+    }
+    .h {
+      grid-area: 7 / 78 / span 5 / span 19;
+      background: rgb(255, 201, 102);
+    }
+    
+    footer {
+      grid-area: 12 / 21 / span 3 / span 76;
+      background: rgb(252, 192, 80);
+    }
+  }
+  
+  @media screen and (min-width: 960px) {
+    header {
+      background: rgb(252, 220, 210);
+    }
+    nav {
+      background: rgb(255, 209, 195);
+    }
+    
+    .c {
+      background: rgb(255, 194, 176);
+    }
+    .d {
+      background: rgb(255, 181, 159);
+    }
+    .e {
+      background: rgb(255, 168, 141);
+    }
+    .f {
+      background: rgb(255, 156, 126);
+    }
+    .g {
+      background: rgb(255, 142, 107);
+    }
+    .h {
+      background: rgb(255, 129, 90);
+    }
+    
+    footer {
+      background: rgb(252, 108, 64);
+    }
+  }
